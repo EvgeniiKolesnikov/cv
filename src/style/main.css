@@ -1,0 +1,15 @@
+.main {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px;
+
+  color: #fff;
+}
+
+@media screen and (max-width: 360px) {
+  .main {
+    max-width: 360px;
+    padding: 90px 20px 58px;
+  }
+}

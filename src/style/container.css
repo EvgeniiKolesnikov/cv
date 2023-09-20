@@ -1,0 +1,35 @@
+.container {
+  display: grid;
+  grid-template-columns: [start] 322px [line] auto [end];
+  grid-template-areas:
+    'person description__top'
+    'person description__bottom';
+  gap: 0px 32px;
+}
+
+@media screen and (max-width: 910px) {
+  .container {
+    grid-template-areas:
+      'person description__top'
+      'description__bottom description__bottom';
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    grid-template-columns: [start] auto [end];
+    grid-template-areas:
+      'person person'
+      'description__top description__top'
+      'description__bottom description__bottom';
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .container {
+    grid-template-areas:
+      'person'
+      'description__top'
+      'description__bottom';
+  }
+}
