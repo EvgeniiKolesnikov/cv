@@ -1,0 +1,82 @@
+.info {
+  max-width: 640px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.info__header {
+  position: relative;
+  top: -2px;
+
+  width: 175px;
+  flex-shrink: 0;
+
+  font-family: 'Redcollar';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.info__right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.description__link {
+  text-decoration: underline;
+}
+
+.info__diploma {
+  position: absolute;
+  display: inline-block;
+  margin-top: 0px;
+  margin-left: 10px;
+  width: 24px;
+  height: 25px;
+  opacity: 0.9;
+  background: url('../svg/diploma.svg');
+  background-size: cover;
+}
+
+.info__subtitle {
+  opacity: 0.4;
+}
+
+.info__years {
+  opacity: 0.4;
+}
+
+.info__skills {
+  max-width: 690px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 8px 32px;
+}
+
+.info__divider {
+  margin: 19px 0;
+  padding: 0;
+
+  opacity: 0.4;
+  border: 1px solid #ffffff;
+}
+
+@media screen and (max-width: 910px) {
+  .info {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .info__diploma {
+    margin-top: -2px;
+    margin-left: 5px;
+    width: 22px;
+    height: 23px;
+  }
+}

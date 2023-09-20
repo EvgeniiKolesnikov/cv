@@ -1,0 +1,32 @@
+.logo {
+  position: absolute;
+  top: 26px;
+  right: 41px;
+  z-index: 1;
+
+  width: 240px;
+  height: 24px;
+  background: url('../svg/logo.svg');
+  background-size: cover;
+}
+
+@media screen and (max-width: 720px) {
+  .logo {
+    top: 10px;
+    right: auto;
+    left: 40px;
+    width: 220px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .logo {
+    top: 20px;
+    right: auto;
+    left: 20px;
+
+    width: 220px;
+    height: 20px;
+  }
+}
